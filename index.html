@@ -25,17 +25,21 @@
           <input type="submit" value="Search" id="search-form-button" />
         </form>
       </header>
-      <main>
+      <main id="main-section-positioning">
         <div>
-          <h1>Barcelona</h1>
+          <h1 id="forecast-city-name">Barcelona</h1>
 
-          <p>
+          <p id="current-forecast-data">
             Saturday 17:23, scattered clouds
             <br />
-            Humidity: 56%, Wind: 2.37 km/h
+            Humidity: <strong>56%</strong>, Wind: <strong>2.56 km/h</strong>
           </p>
         </div>
-        <div>🌞 15 &deg;C</div>
+        <div id="current-forecast-temperature">
+          <span id="forecast-emoji">🌞</span>
+          <span id="forecast-value">16</span>
+          <span id="forecast-unit">&deg;C </span>
+        </div>
       </main>
 
       <footer>

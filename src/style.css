@@ -41,6 +41,49 @@ header {
   color: white;
 }
 
+main {
+  padding: 30px 0;
+}
+
+#main-section-positioning {
+  display: flex;
+  justify-content: space-between;
+}
+
+#forecast-city-name {
+  margin: 0;
+  font-size: 38px;
+  line-height: 48px;
+}
+
+#current-forecast-data {
+  font-size: 16px;
+  color: rgba(39, 33, 66, 0.4);
+  line-height: 24px;
+  font-weight: 500;
+}
+
+#current-forecast-data strong {
+  color: #f65282;
+}
+
+#forecast-emoji {
+  font-size: 44px;
+  position: relative;
+  top: -25px;
+  margin-right: 4px;
+}
+
+#forecast-value {
+  font-size: 80px;
+  font-weight: bold;
+}
+
+#forecast-unit {
+  font-size: 28px;
+  position: relative;
+  top: -40px;
+}
 footer {
   border-top: 1px solid #f9f7fd;
   padding: 30px 0 0 0;
