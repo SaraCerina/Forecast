@@ -23,7 +23,7 @@ a {
 }
 
 header {
-  border-bottom: 1px solid #f9f7fd;
+  border-bottom: 1px solid #fefed5;
   padding: 0 0 30px 0;
 }
 
@@ -65,7 +65,7 @@ main {
   font-size: 16px;
   color: rgba(39, 33, 66, 0.4);
   line-height: 24px;
-  font-weight: 500;
+  font-weight: 400;
 }
 
 #current-forecast-data strong {
@@ -90,9 +90,9 @@ main {
   top: -40px;
 }
 footer {
-  border-top: 1px solid #f9f7fd;
+  border-top: 1px solid #fefed5;
   padding: 30px 0 0 0;
   text-align: center;
   font-size: 14px;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(0, 0, 0, 0.5);
 }
