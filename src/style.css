@@ -1,5 +1,10 @@
 body {
-  background-color: #f9f7fd;
+  background: radial-gradient(
+    400px at 0.6% 77.9%,
+    rgb(221, 255, 214) 0.5%,
+    rgb(214, 254, 254) 90.5%
+  );
+  background-attachment: fixed;
   font-family: "Roboto", sans-serif;
 }
 
@@ -14,7 +19,7 @@ body {
 }
 
 a {
-  color: #885df1;
+  color: #ff9234;
 }
 
 header {
@@ -23,7 +28,7 @@ header {
 }
 
 #search-form-input {
-  background-color: #f9f7fd;
+  background-color: #fefed5;
   border: none;
   border-radius: 6px;
   width: 80%;
@@ -32,7 +37,7 @@ header {
 }
 
 #search-form-button {
-  background-color: #885df1;
+  background-color: #ff9234;
   padding: 15px 30px;
   border: none;
   font-size: 16px;
@@ -64,7 +69,7 @@ main {
 }
 
 #current-forecast-data strong {
-  color: #f65282;
+  color: #35d0ba;
 }
 
 #forecast-emoji {
