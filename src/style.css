@@ -73,10 +73,11 @@ main {
 }
 
 #weather-emoji {
-  font-size: 44px;
+ width: 80px;
+ height: 80px;
   position: relative;
-  top: -25px;
-  margin-right: 4px;
+  top: 5px;
+  margin-right: -6px;
 }
 
 #weather-value {

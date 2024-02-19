@@ -5,6 +5,10 @@ function updateWeather(response) {
   let searchedCity = document.querySelector("#weather-city-name");
   searchedCity.innerHTML = response.data.city;
 
+  let emoji = document.querySelector("#weather-emoji");
+  
+  emoji.innerHTML = `<img src=${response.data.condition.icon_url} id="weather-emoji" />`;
+
   let condition = document.querySelector("#weather-condition");
   condition.innerHTML = response.data.condition.description;
 
@@ -18,7 +22,6 @@ function updateWeather(response) {
   let date = new Date(response.data.time * 1000);
   time.innerHTML = formatDate(date);
 }
-
 
 function formatDate(date) {
   let hours = date.getHours();
@@ -44,15 +47,11 @@ function formatDate(date) {
   return `${day} ${hours}:${minutes}`;
 }
 
-
-
 function searchCity(city) {
   let apiKey = "efaac33t940b8a24381d0c380bbb4ddo";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
   axios.get(apiUrl).then(updateWeather);
 }
-
-
 
 function handleSearchEvent(event) {
   event.preventDefault();
@@ -60,10 +59,7 @@ function handleSearchEvent(event) {
   searchCity(searchFormInput.value);
 }
 
-
-
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSearchEvent);
 
 searchCity("Barcelona");
-
