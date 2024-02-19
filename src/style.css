@@ -55,36 +55,36 @@ main {
   justify-content: space-between;
 }
 
-#forecast-city-name {
+#weather-city-name {
   margin: 0;
   font-size: 38px;
   line-height: 48px;
 }
 
-#current-forecast-data {
+#current-weather-data {
   font-size: 16px;
   color: rgba(39, 33, 66, 0.4);
   line-height: 24px;
   font-weight: 400;
 }
 
-#current-forecast-data strong {
+#current-weather-data strong {
   color: #35d0ba;
 }
 
-#forecast-emoji {
+#weather-emoji {
   font-size: 44px;
   position: relative;
   top: -25px;
   margin-right: 4px;
 }
 
-#forecast-value {
+#weather-value {
   font-size: 80px;
   font-weight: bold;
 }
 
-#forecast-unit {
+#weather-unit {
   font-size: 28px;
   position: relative;
   top: -40px;
