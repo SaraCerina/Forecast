@@ -73,8 +73,8 @@ main {
 }
 
 #weather-emoji {
- width: 80px;
- height: 80px;
+  width: 80px;
+  height: 80px;
   position: relative;
   top: 5px;
   margin-right: -6px;
@@ -90,6 +90,30 @@ main {
   position: relative;
   top: -40px;
 }
+
+.forecast-section {
+  margin: 20px 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.forecast-day {
+  color: #ff9234;
+  font-size: 17px;
+}
+.forecast-temperature {
+  font-size: 15px;
+  color: #35d0ba;
+}
+
+.forecast-maximum {
+  font-weight: 700;
+}
+.forecast-minimum {
+  font-weight: 400;
+}
+
 footer {
   border-top: 1px solid #fefed5;
   padding: 30px 0 0 0;
