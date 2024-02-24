@@ -6,7 +6,7 @@ function updateWeather(response) {
   searchedCity.innerHTML = response.data.city;
 
   let emoji = document.querySelector("#weather-emoji");
-  
+
   emoji.innerHTML = `<img src=${response.data.condition.icon_url} id="weather-emoji" />`;
 
   let condition = document.querySelector("#weather-condition");
@@ -63,3 +63,30 @@ let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", handleSearchEvent);
 
 searchCity("Barcelona");
+
+///
+
+function displayForecast() {
+  let forecast = document.querySelector("#forecast");
+
+  let days = ["Tue", "Wed", "Thu", "Fri", "Sat"];
+  let forecastHTML = "";
+
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+  <div class="forecast-date">
+          <div class="forecast-day">${day}</div>
+          <div class="forecast-icon">🌞</div>
+          <div class="forecast-temperature">
+            <span class="forecast-maximum">18&deg; </span>
+            <span class="forecast-minimum">12&deg;</span>
+          </div>
+        </div>
+        
+ `;
+  });
+  forecast.innerHTML = forecastHTML;
+}
+displayForecast();
